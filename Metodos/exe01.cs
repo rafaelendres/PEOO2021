@@ -1,17 +1,17 @@
 using System;
   class MainClass {
+   public static void Main (){
+    double x = 10;
+    double y = 20;
+    double z = Maior(x, y);
+    Console.WriteLine(z);
+    Console.WriteLine(Maior(50, 20));
+    Console.WriteLine(Maior(3760, 350));
+   }
+   
     public static double Maior(double x, double y){
-    
-    double maior = 0;
-    if (x > y) maior = x;
-    else maior = y;
-
-    return maior;
+        double a = x;
+        if (y > x) a = y;
+        return a;
       }
-  public static void Main (string[] args ){
-    double x, y;
-    x = double.Parse(Console.ReadLine());
-    y = double.Parse(Console.ReadLine());
-    Console.WriteLine($"Maior = {maior}");
-  }
-}
+ }
