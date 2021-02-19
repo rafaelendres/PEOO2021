@@ -3,14 +3,17 @@ using System;
   class MainClass {
     
     public static void Main (string[] args) {
-      int x;
-      Intervalo(out x);
-      Console.WriteLine($"Intervalo: {x.Start} a {x.End}");
+      double x = 45.4;
+      int y;
+      int z;
+      Intervalo(x, out y, out z);
+      Console.WriteLine(y);
+      Console.WriteLine(z);
+    }
       
-      
-      public static void Intervalo(double x, out int inicio, out int fim) {
-      x = double.Parse(Console.ReadLine());
-      return x;
+     public static void Intervalo(double x, out int inicio, out int fim) {
+        inicio = (int) x;
+        fim = inicio + 1;
          }
-  }
-  }
+  }   
+  
